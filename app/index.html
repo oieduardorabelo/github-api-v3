@@ -2,11 +2,59 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Potentia - Github Info</title>
 
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <h1>It wotks!</h1>
+  <h1 class="app-title">A simple use of Github API v3</h1>
+  <div class="search-field">
+    <input id="search-input" type="text" placeholder="Search for a user" data-github-user required>
+    <label for="search-input" class="floated-label">Search for a user</label>
+  </div>
+  <div class="user-card-area"></div>
+  <div class="repo-list-area"></div>
+  <div id="language-chart-area"></div>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="template" id="template-user-card">
+  <div class="user-card">
+    <figure class="user-avatar">
+      <img src="{{avatar_url}}" alt="">
+      <figcaption class="user-caption">
+        <a class="user-profile-link" href="{{html_url}}">{{login}}</a>
+      </figcaption>
+    </figure>
+    <div class="user-details">
+      <h1 class="user-name">{{name}}</h1>
+      <p class="user-info-details">{{email}}</p>
+      <p class="user-info-details">{{company}}</p>
+      <p class="user-info-details">{{blog}}</p>
+      <p class="user-info-details">{{location}}</p>
+      <ul class="github-info">
+        <li class="github-items">{{public_repos}} <span class="github-info-details">public <br>repos</span></li>
+        <li class="github-items">{{public_gists}} <span class="github-info-details">public <br>gists</span></li>
+        <li class="github-items">{{followers}} <span class="github-info-details">followers</span></li>
+        <li class="github-items">{{following}} <span class="github-info-details">following</span></li>
+      </ul>
+    </div>
+  </div>
+  </script>
+
+  <script type="template" id="template-repo-item">
+  <div class="repo-item">
+    <h1 class="repo-name">{{name}}</h1>
+    <div class="repo-details">
+      <p>{{description}}</p>
+      <p>{{created_at}}</p>
+      <p>{{language}}</p>
+    </div>
+    <p><a href="{{html_url}}">View in Github</a></p>
+  </div>
+  </script>
 </body>
 </html>
