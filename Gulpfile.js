@@ -49,7 +49,8 @@ gulp.task('scss', function() {
 gulp.task('scripts', function() {
   gulp.src(jsFiles)
     .pipe(concat(jsConcatName))
-    .pipe(gulp.dest(jsPath));
+    .pipe(gulp.dest(jsPath))
+    .pipe(connect.reload());
 });
 
 gulp.task('watch', ['html', 'scss'], function() {
