@@ -16,8 +16,8 @@
         var apiUrlUser = 'https://api.github.com/users/' + userName;
         var apiUrlRepo = 'https://api.github.com/users/' + userName + '/repos';
 
-        getUserInfo('info.json');
-        getRepoInfo('repos.json');
+        getUserInfo(apiUrlUser);
+        getRepoInfo(apiUrlRepo);
         dirtySearch('dirty');
       }, 500);
     }
