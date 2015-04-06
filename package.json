@@ -1,0 +1,25 @@
+{
+  "name": "github-api-v3",
+  "version": "1.0.0",
+  "description": "Using `ES6 with Webpack`, to enable **ES6+** features with **[Babel](https://github.com/babel)** compiler",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oieduardorabelo/github-api-v3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oieduardorabelo/github-api-v3/issues"
+  },
+  "homepage": "https://github.com/oieduardorabelo/github-api-v3",
+  "devDependencies": {
+    "babel-core": "^5.0.8",
+    "babel-loader": "^5.0.0",
+    "jsonp": "^0.2.0",
+    "webpack": "^1.7.3"
+  }
+}
