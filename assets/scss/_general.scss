@@ -1,0 +1,36 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(0deg, rgb(236, 240, 241), #FFF);
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 92em;
+  min-height: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+.app-title {
+  font-size: 3em;
+  margin: .5em;
+  text-align: center;
+}

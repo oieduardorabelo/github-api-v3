@@ -1,0 +1,18 @@
+{
+  "name": "github-api-v3",
+  "version": "0.0.0",
+  "authors": [
+    "Eduardo Rabelo <oieduardorabelo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "~3.0.1"
+  }
+}

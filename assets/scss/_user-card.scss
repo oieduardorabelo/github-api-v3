@@ -1,0 +1,60 @@
+.user-card {
+  @extend %clearfix;
+  background: rgb(236, 240, 241);
+  position: relative;
+
+  .user-details {
+    padding: 2em;
+  }
+}
+
+.user-avatar {
+  position: relative;
+
+  .user-caption {
+    background: darken(#ecf0f1, 40%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .user-profile-link {
+    color: #ecf0f1;
+    display: block;
+    font-size: 2em;
+    padding: .5em;
+    text-decoration: none;
+  }
+}
+
+.user-name {
+  font-size: 3em;
+}
+
+.user-info-details {
+  font-size: 2em;
+  font-weight: 100;
+  margin: .3em 0;
+}
+
+.github-info {
+  @extend %clearfix;
+  list-style: none;
+  margin-top: 3em;
+  padding: 0;
+}
+
+.github-info .github-items {
+  float: left;
+  font-size: 2em;
+  text-align: center;
+  width: 25%;
+}
+
+.github-info .github-info-details {
+  display: block;
+  font-size: .7em;
+  font-weight: 100;
+}

@@ -1,0 +1,41 @@
+.repo-list-area {
+  @extend %clearfix;
+}
+
+.repo-item {
+  padding: 2em;
+  position: relative;
+  transition: all linear 250ms;
+
+  &.active {
+    background: #fff;
+    outline: 1px solid #3498db;
+
+    .repo-details {
+      opacity: 1;
+      position: relative;
+      top: 0;
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+
+.repo-name {
+  &:before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAI3AAACNwH3BkTCAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAEtQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA16y2cwAAABl0Uk5TAA0tMDI3QFdgYWRvcHV3e4CYobja3uDu8KOXfz8AAABsSURBVBhXbc/BEoIwFEPRUyttBatQFf3/L3UhiDOYXe6beUn4q5BqTWHzfSsxltavfspcL+RpuWc87sg9hIZwPEALSAWn5wwloUY4zxDrP5DKBkpany6gBT6x3e01rLFMWTeOw7fYvvp+3K/e9/4Dy2ADFdkAAAAASUVORK5CYII86af0f327c03d8529b86c7df1d4f6ed4=);
+    margin-right: 2px;
+    position: relative;
+    top: 1px;
+  }
+  word-break: break-all;
+}
+
+.repo-details {
+  font-size: 1.6em;
+  opacity: 0;
+  position: absolute;
+  top: 3em;
+  transition: all linear 100ms;
+  visibility: hidden;
+}
