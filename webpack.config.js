@@ -1,4 +1,4 @@
-var path = require('path');
+var path = require('path')
 
 var webpack = {
   entry: {
@@ -18,6 +18,6 @@ var webpack = {
       }
     ]
   }
-};
+}
 
-module.exports = webpack;
+module.exports = webpack
