@@ -1,3 +1,5 @@
+'use strict'
+
 export default (repos) => {
-  console.log(repos);
+  console.log(repos)
 }
